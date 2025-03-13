@@ -1,3 +1,9 @@
+#pragma once
+
+#include "fs.h"
+#include "sleeplock.h"
+#include "types.h"
+
 struct buf {
   int flags;
   uint dev;

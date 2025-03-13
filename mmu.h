@@ -1,3 +1,5 @@
+#pragma once
+
 // This file contains definitions for the
 // x86 memory management unit (MMU).
 
@@ -22,6 +24,9 @@
 #define NSEGS 6
 
 #ifndef __ASSEMBLER__
+
+#include "types.h"
+
 // Segment Descriptor
 struct segdesc {
   uint lim_15_0 : 16;  // Low bits of segment limit
